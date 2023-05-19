@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         7emmerli
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  A script that asks Raouf Ould Ali to put your problem in red
 // @downloadURL https://github.com/SpeedCode210/algerianmo-7emmerli/raw/main/script.user.js
 // @author       Raouf Ould Ali
 // @match        https://www.algerianmo.com/problems/*/?sub=*
+// @match        https://algerianmo.com/problems/*/?sub=*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=algerianmo.com
 // @grant        none
 // ==/UserScript==
