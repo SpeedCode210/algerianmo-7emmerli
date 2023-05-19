@@ -5,7 +5,7 @@
 // @description  A script that asks Raouf Ould Ali to put your problem in red
 // @downloadURL https://github.com/SpeedCode210/algerianmo-7emmerli/raw/main/script.user.js
 // @author       Raouf Ould Ali
-// @match        https://www.algerianmo.com/problems/a/118/?sub=*
+// @match        https://www.algerianmo.com/problems/*/?sub=*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=algerianmo.com
 // @grant        none
 // ==/UserScript==
