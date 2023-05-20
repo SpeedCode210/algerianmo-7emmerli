@@ -1,14 +1,12 @@
 // ==UserScript==
 // @name         7emmerli
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  A script that asks Raouf Ould Ali to put your problem in red
 // @downloadURL https://github.com/SpeedCode210/algerianmo-7emmerli/raw/main/script.user.js
 // @author       Raouf Ould Ali
 // @match        https://www.algerianmo.com/problems/*/?sub=*
-// @match        https://algerianmo.com/problems/*/?sub=*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=algerianmo.com
-// @grant        none
 // ==/UserScript==
 
 const getParameter = (key) => {
@@ -21,8 +19,10 @@ const getParameter = (key) => {
     return parameterList.get(key);
 }
 
-if(getParameter("sub") == 0)
-    throw new Exception();
+
+if(getParameter("sub") == 0) throw true;
+
+if (document.body.textContent.includes('إجابات التلاميذ الآخرين') || document.body.textContent.includes('هذه الإجابة غير صحيحة. يمكنك الرد في التعليقات')) throw true;
 
 document.getElementsByTagName("h2")[0].innerHTML += `<a id="a7mar" class="btn btn-danger" style="margin-right:15px">7emmerli</a>`;
 
