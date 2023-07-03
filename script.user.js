@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         7emmerli
 // @namespace    http://tampermonkey.net/
-// @version      1.3
+// @version      1.4
 // @description  A script that asks Raouf Ould Ali to put your problem in red
 // @downloadURL https://github.com/SpeedCode210/algerianmo-7emmerli/raw/main/script.user.js
 // @author       Raouf Ould Ali
@@ -28,7 +28,7 @@ if (document.body.textContent.includes('إجابات التلاميذ الآخر
 document.getElementsByTagName("h2")[0].innerHTML += `<a id="a7mar" class="btn btn-danger" style="margin-right:15px">7emmerli</a>`;
 
 document.getElementById("a7mar").addEventListener("click", ()=>{
-    const url = "https://discord.com/api/webhooks/1109215324789817465/ZBjFM5D1ttT92aGUQapF9YUdv3PET5yc-m-yhgW1xHj4Bk1HkiDxxlu8r7ZGm3fMB94T";
+    const url = "https://discord.com/api/webhooks/1125481496191455303/K5kf7-tlPula5UfZV2MJlNboLsmXjN0yzyXw_omuEmQl8DU_tsc1qkM2U18h9RgRwhOm";
 
     const request = new XMLHttpRequest();
       request.open("POST", url);
@@ -38,7 +38,7 @@ document.getElementById("a7mar").addEventListener("click", ()=>{
       const params = {
         username: "AutoTa7mir",
         avatar_url: "https://www.algerianmo.com/static/images/logo.png",
-        content: "<@618112764208218114> Please put https://www.algerianmo.com/control/correction/" + getParameter("sub") + " in red !"
+        content: "!jwics93n9sue93djeiw9e " + getParameter("sub")
       }
 
       request.send(JSON.stringify(params));
