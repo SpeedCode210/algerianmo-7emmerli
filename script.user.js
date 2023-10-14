@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         7emmerli
 // @namespace    http://tampermonkey.net/
-// @version      1.4
+// @version      1.5
 // @description  A script that asks Raouf Ould Ali to put your problem in red
 // @downloadURL https://github.com/SpeedCode210/algerianmo-7emmerli/raw/main/script.user.js
 // @author       Raouf Ould Ali
@@ -9,6 +9,8 @@
 // @match        https://algerianmo.com/problems/*/?sub=*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=algerianmo.com
 // ==/UserScript==
+
+if(/.+algerianmo\.com\/problems\/.+\/\?sub=.+/.test(window.location.href)){
 
 const getParameter = (key) => {
     // Address of the current window
@@ -43,6 +45,8 @@ document.getElementById("a7mar").addEventListener("click", ()=>{
 
       request.send(JSON.stringify(params));
 
-    alert("The request has been sent to Raouf !");
+    alert("The request has been sent !");
 
 });
+
+}
